@@ -1,0 +1,123 @@
+<html>
+<head>
+</head>
+
+<body applyno="-1" PaperSize="A4" PaperWidth="793" PaperHeight="1122" WriteLog="0" TemplateHtml="0" CursorPosition="" DefaultFontSize="12" PaperColor="#FFFFFF">
+<div pagehead divideline="false">
+<Table align="center" Width="660">
+<TR><TD Width="260" ImageWidth="210" ImageHeight="60" readonly="T" valign="left" underline="F"><p Images align="left"><Img src="[SystemDir]\Images\logo.jpg" ></Img></p></TD>
+<TD  Width="400" ID="Title2" ReadOnly="T"   DefaultLineDistance="200" ><p align="left"><B><Font face="����" size="25" color="#000000">&nbsp;&nbsp;</Font></B></p></TD>
+</TR>
+</Table>
+</div>
+<Table align="center" Width="660">
+<TR> 
+<TD Width="530" ID="L112" ReadOnly="T" align="right" ><p><B>�����:</B></p></TD>
+<TD Width="130" ID="TechNo" ReadOnly="T"   align="left"  Table="Ris_List"></TD></TR>
+</Table>
+
+<Table align="center" Frame="above" FrameSize="2" Width="660" style="color:#00FF00;border-color: #009688;">
+<TR>
+<TD Width="70" ID="L2" ReadOnly="T"><p><B>��&nbsp;&nbsp;��</B></p></TD>
+<TD Width="90" ID="PatName" ReadOnly="F" UnderLine="F" Table="Ris_List"><p style=" line-height:100%;"></p></TD>
+<TD Width="50" ID="L3" ReadOnly="T"><p><B>�Ա�</B></p></TD>
+<TD Width="110" ID="Sex" ReadOnly="F" UnderLine="F" Table="Ris_List" SQL="Select SlaveNo as Code, SlaveName as DispName From Slave where ClassCode='�Ա�' and SubSysCode='[syscode]' and HOSPITALCODE='[hospcode]'"><p style=" line-height:100%;"></p></TD>
+<TD Width="50" ID="L4" ReadOnly="T"><p><B>���䣺</B></p></TD>
+<TD Width="80" ID="AgeName" ReadOnly="F" UnderLine="F" Table="Ris_List"><p style=" line-height:100%;"></p></TD>
+
+
+<TD Width="80"  readonly="T" id="WardOrRegName" table="Ris_List" DefaultFontBold="T"><p align="right"><B>ס Ժ �ţ�</B></p></TD>
+<TD  Width="130"id="HospNo" readonly="T" table="Ris_List"><p style=" line-height:100%;"></p></TD>
+</TR>
+
+<TR>
+<TD Width="70" ID="L6" ReadOnly="T"><p><B>��&nbsp;&nbsp;�ң�</B></p></TD>
+<TD Width="90" ID="ApplyDeptName" IDName="ApplyDeptName" ReadOnly="F" UnderLine="F" Table="Ris_List"><p style=" line-height:100%;"></p></TD>
+
+<TD Width="50" ID="L8" ReadOnly="T"><p><B>���ţ�</B></p></TD>
+<TD Width="80" ID="BedNo" ReadOnly="F" UnderLine="F" Table="Ris_List"><p style=" line-height:100%;"></p></TD>
+<TD Width="50" ID="L10" ReadOnly="T"><p><B>������</B></p></TD>
+<TD Width="110" ID="EquipmentID" IDName="Instrument" UnderLine="F" KeepValue="T" Table="Ris_List" SQL="select convert(varchar,EquipmentID) as Code,EquipmentName as DispName from EquipmentInfo where SubSysCode = '[syscode]' and EquipmentId in (select EquipMentId from InstRelateEquip where InstId = '[reportid]') order by DispName"><p style=" line-height:100%;"></p></TD>
+
+<TD Width="80" ><p align="right"><B></B></p></TD>
+<TD  Width="130"><p style=" line-height:100%;"></p></TD>
+</TR>
+</Table>
+
+
+<Table align="center" Frame="below" FrameSize="2" Width="660" style="border-color: #009688;">
+
+<TR>
+<TD Width="80" ID="L16" ReadOnly="T"><p><B>��鲿λ��</B></p></TD>
+<TD Width="580" ID="BW" Table="Ris_Result" dllcaption="��λ" dll="com_SelSample.dll"><p style=" line-height:100%;"></p></TD>
+</TR>
+</Table>
+
+
+
+<Table align="center" Width="660" style="border-color: #009688;">
+<TR>
+<TD Width="660" ID="ImagePath"><P Images align="center"></P></TD>
+</TR>
+</Table>
+
+<Table align="center" Width="660" Frame="above" FrameSize="2" style="border-color: #009688;">
+
+
+<TR>
+<TD Width="660" ID="L17" ReadOnly="T"><p><B>����������</B></p></TD>
+</TR>
+
+<TR>
+<TD valign="top" Width="660" ID="JCSJ" Table="Ris_Result" DefaultHeight="300" IsText="T"><p style=" line-height:100%;"></p></TD>
+</TR>
+</Table>
+<Table align="center" Width="660" Frame="above" FrameSize="2" style="border-color: #009688;">
+<TR>
+<TD Width="660" ID="L18" ReadOnly="T" Frame="above" FrameSize="2"><p><B>������ʾ��(�˱������ӳ�ܼ�鵱ʱ�������������ο�)</B></p></TD>
+</TR>
+
+<TR>
+<TD valign="top" Width="660" ID="JCJL" Table="Ris_Result" DefaultHeight="80" IsText="T"><p style=" line-height:100%;"></p></TD>
+</TR>
+</Table>
+
+<div pagefoot divideline="false">
+
+<Table align="center" Width="660" Frame="above" FrameSize="2" style="border-color: #009688;">
+<TR>
+<TD Width="350" ID="L19" ReadOnly="T"><p style=" line-height:100%;"><B></B></p></TD>
+
+<TD Width="310" ID="L19" ReadOnly="T"><p style=" line-height:100%;"><B>���ҽ��:(ǩ����Ч)</B></p></TD>
+
+</TR>
+</Table>
+
+
+
+<Table align="center" Width="660" style="border-color: #009688;">
+<TR>
+<TD Width="660" ID="L23" ReadOnly="T"><p style=" line-height:100%;"><Font face="����" size="10" color="#000000">ע������������ٴ�ҽʦ�ο������ɼ��ҽʦ�ױ�ǩ������Ч</Font></p></TD>
+</TR>
+</Table>
+
+<Table align="center" Width="660" Frame="above" FrameSize="2" style="border-color: #009688;">
+<TR>
+<TD  Width="80" ID="L20" ReadOnly="T"><p style=" line-height:100%;"><B>����ʱ��:</B></p></TD>
+<TD  Width="580" ID="ExamTime" Table="Ris_List" DataType="dtDateTime"><p style=" line-height:100%;">11</p></TD>
+</TR>
+</Table>
+
+<Table align="center" Width="660">
+
+
+<TR>
+<TD Width="660" ID="L24" ReadOnly="T"><p style=" line-height:100%;"><Font face="����" size="10" color="#000000">�绰:(0838)2304939</Font></p></TD>
+</TR>
+
+</Table>
+
+
+</div>
+</body>
+</html>
